@@ -5,7 +5,7 @@
 
 body {
     background-color: black;
-    color: red;
+    color: blue;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -36,11 +36,11 @@ h1 {
     width: 300px;
     height: 400px;
     background: rgba(255, 0, 0, 0.1);
-    border: 1px solid red;
+    border: 1px solid blue;
     display: flex;
     flex-direction: column;
     padding: 10px;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.5);
 }
 
 /* --- Toggle Button --- */
@@ -121,7 +121,7 @@ h1 {
 }
 
 .my-message .text {
-    background: red;
+    background: blue;
     color: white;
     padding: 8px 12px;
     border-radius: 12px;
@@ -143,7 +143,7 @@ h1 {
 /* Name label above each message */
 .name {
     font-size: 0.75em;
-    color: #ff6666;
+    color: purple;
     margin: 0 0 6px 0;
 }
 
@@ -151,7 +151,7 @@ h1 {
 .typebox {
     display: flex;
     align-items: center;
-    border-top: 1px solid red;
+    border-top: 1px solid blue;
     padding: 8px;
     background: transparent;
 }
@@ -169,7 +169,7 @@ resize: none;
 }
 
 #send-message {
-background: red;
+background: blue;
 border: none;
 color: white;
 padding: 8px 15px;
@@ -184,7 +184,7 @@ cursor: pointer;
 }
 
 .messages::-webkit-scrollbar-thumb {
-    background-color: red;
+    background-color: blue;
     border-radius: 3px;
 }
 
