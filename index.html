@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educate Lanka Foundation | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="overflow-x-hidden">
+
+    <header class="bg-white/90 backdrop-blur-lg shadow-sm sticky top-0 z-50 w-full">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="home.html" class="text-2xl font-bold text-blue-600">
+                <i class="fas fa-graduation-cap mr-2"></i>EducateLanka
+            </a>
+            <div class="lg:flex items-center space-x-6">
+                <a href="home.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="about.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+                <a href="programs.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Programs</a>
+                <a href="resources.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Resources</a>
+                <a href="volunteer.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Volunteer</a>
+                <a href="blog.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Blog</a>
+                <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+            <div class="lg:flex items-center space-x-4">
+                <a href="donate.html" class="bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-blue-700 transition transform hover:scale-105 duration-300">
+                    <i class="fas fa-heart mr-2"></i>Donate
+                </a>
+                <a href="portal.html" class="bg-green-500 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-green-600 transition transform hover:scale-105 duration-300">
+                    <i class="fas fa-user-graduate mr-2"></i>Student Portal
+                </a>
+            </div>
+            <div class="lg:hidden">
+                <button id="menu-btn" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="mobile-menu hidden fixed top-0 right-0 h-full w-64 bg-white shadow-xl z-50 p-6 lg:hidden">
+            <button id="close-btn" class="absolute top-4 right-4 text-gray-700 focus:outline-none">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+            <div class="flex flex-col space-y-6 mt-10">
+                <a href="home.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Home</a>
+                <a href="about.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">About Us</a>
+                <a href="programs.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Programs</a>
+                <a href="resources.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Resources</a>
+                <a href="volunteer.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Volunteer</a>
+                <a href="blog.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Blog</a>
+                <a href="contact.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Contact</a>
+                <a href="donate.html" class="bg-blue-600 text-white text-center font-semibold mt-4 px-5 py-2 rounded-lg">Donate</a>
+                <a href="portal.html" class="bg-green-500 text-white text-center font-semibold mt-2 px-5 py-2 rounded-lg">Student Portal</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+        
+        <section id="home" class="page min-h-screen fade-in">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img src="https://placehold.co/1200x600/3b82f6/ffffff?text=Empowering+Sri+Lankan+Futures" alt="Sri Lankan students in a classroom" class="w-full h-[60vh] object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-center p-4">
+                    <div class="fade-in">
+                        <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">Lighting the Path to Knowledge</h1>
+                        <p class="text-lg md:text-xl text-white mt-4 max-w-3xl mx-auto">We are dedicated to providing free, quality education in English, ICT, and career skills to empower the youth of Sri Lanka.</p>
+                        <a href="programs.html" class="mt-8 inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition transform hover:scale-105 duration-300">Discover Our Programs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center fade-in">
+                 <h2 class="text-3xl font-bold text-gray-800 mb-2">Our Impact in Numbers</h2>
+                 <p class="text-gray-600 max-w-2xl mx-auto mb-10">We believe in transparency and results. Here's a look at what we've achieved together.</p>
+                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                     <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                         <i class="fas fa-user-graduate text-5xl text-blue-500 mb-4"></i>
+                         <h3 class="text-5xl font-extrabold text-gray-800" data-target="1250">0</h3>
+                         <p class="text-gray-600 mt-2 text-lg">Students Trained</p>
+                     </div>
+                     <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                         <i class="fas fa-hands-helping text-5xl text-green-500 mb-4"></i>
+                         <h3 class="text-5xl font-extrabold text-gray-800" data-target="280">0</h3>
+                         <p class="text-gray-600 mt-2 text-lg">Active Volunteers</p>
+                     </div>
+                     <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                         <i class="fas fa-award text-5xl text-yellow-500 mb-4"></i>
+                         <h3 class="text-5xl font-extrabold text-gray-800" data-target="75">0</h3>
+                         <p class="text-gray-600 mt-2 text-lg">Scholarships Awarded</p>
+                     </div>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4"><i class="fas fa-graduation-cap mr-2"></i>EducateLanka</h3>
+                    <p class="text-gray-400">Empowering Sri Lanka's future through free and accessible education.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="programs.html" class="text-gray-400 hover:text-white">Programs</a></li>
+                        <li><a href="volunteer.html" class="text-gray-400 hover:text-white">Get Involved</a>  </li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-envelope mr-2"></i> info@educatelanka.org</li>
+                        <li><i class="fas fa-phone mr-2"></i> +94 11 234 5678</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Colombo, Sri Lanka</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+                &copy; 2025 EducateLanka Foundation. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
