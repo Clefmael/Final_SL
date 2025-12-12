@@ -98,7 +98,7 @@
    class="w-full flex-1 inline-flex items-center justify-center
           bg-green-500 text-white font-bold py-3 px-4 rounded-lg
           shadow-md hover:bg-green-600
-          transition-colors duration-300 ease-in-out">
+          transition-all transform hover:scale-105">
   <i class="fas fa-credit-card mr-2"></i> PayHere
 </a>
 </div>
@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         } catch (err) {
             console.error(err);
-            alert("Could not start Stripe checkout session.");
+            alert("Could not start Stripe checkout session."); 
         }
     });
 
@@ -257,6 +257,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
+
 
 
 
