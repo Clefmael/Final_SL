@@ -148,7 +148,27 @@
                 &copy; 2025 EducateLanka Foundation. All Rights Reserved.
             </div>
         </div>
+        
     </footer>
+
+
+
+    <!-- Chatbot button + dialog container -->
+<button id="chatbot-toggle"
+        style="position:fixed; bottom:25px; right:25px; z-index:9999;"
+        class="bg-blue-600 text-white px-4 py-3 rounded-full shadow-lg hover:bg-blue-700 transition">
+    Need Help? Chat with ED-dy the bot 
+</button>
+
+<div id="chatbot-dialog" title="Malky Chatbot" style="display:none;">
+    <div id="chatbot-messages" style="max-height:240px; overflow-y:auto; margin-bottom:10px;">
+    </div>
+    <div style="display:flex; gap:6px;">
+        <input id="chatbot-input" type="text" placeholder="Type a message..."
+               style="flex-grow:1; padding:8px; border:1px solid #ccc; border-radius:4px;">
+        <button id="chatbot-send" class="bg-blue-600 text-white px-3 py-2 rounded">Send</button>
+    </div>
+</div>
 
         <!-- jQuery + jQuery UI (chatbot) -->
 
@@ -170,5 +190,6 @@
 </body>
 
 </html>
+
 
 
