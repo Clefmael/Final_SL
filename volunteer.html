@@ -1,224 +1,264 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educate Lanka Foundation | Volunteer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educate Lanka Foundation | Volunteer</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="main.css" />
 </head>
+
 <body class="overflow-x-hidden">
 
-    <header class="bg-white/90 backdrop-blur-lg shadow-sm sticky top-0 z-50 w-full">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-blue-600">
-                <i class="fas fa-graduation-cap mr-2"></i>EducateLanka
-            </a>
-            <div class="lg:flex items-center space-x-6">
-                <a href="index.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
-                <a href="about.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
-                <a href="programs.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Programs</a>
-                <a href="resources.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Resources</a>
-                <a href="volunteer.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Volunteer</a>
-                <a href="blog.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Blog</a>
-                <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
-            </div>
-            <div class="lg:flex items-center space-x-4">
-                <a href="donate.html" class="bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-blue-700 transition transform hover:scale-105 duration-300">
-                    <i class="fas fa-heart mr-2"></i>Donate
-                </a>
-                <a href="portal.html" class="bg-green-500 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-green-600 transition transform hover:scale-105 duration-300">
-                    <i class="fas fa-user-graduate mr-2"></i>Student Portal
-                </a>
-            </div>
-            <div class="lg:hidden">
-                <button id="menu-btn" class="text-gray-700 focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
-        </nav>
-        <div id="mobile-menu" class="mobile-menu hidden fixed top-0 right-0 h-full w-64 bg-white shadow-xl z-50 p-6 lg:hidden">
-            <button id="close-btn" class="absolute top-4 right-4 text-gray-700 focus:outline-none">
-                <i class="fas fa-times text-2xl"></i>
-            </button>
-            <div class="flex flex-col space-y-6 mt-10">
-                <a href="home.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Home</a>
-                <a href="about.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">About Us</a>
-                <a href="programs.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Programs</a>
-                <a href="resources.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Resources</a>
-                <a href="volunteer.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Volunteer</a>
-                <a href="blog.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Blog</a>
-                <a href="contact.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Contact</a>
-                <a href="donate.html" class="bg-blue-600 text-white text-center font-semibold mt-4 px-5 py-2 rounded-lg">Donate</a>
-                <a href="portal.html" class="bg-green-500 text-white text-center font-semibold mt-2 px-5 py-2 rounded-lg">Student Portal</a>
-            </div>
-        </div>
-    </header>
+  <!-- HEADER -->
+  <header class="bg-white/90 backdrop-blur-lg shadow-sm sticky top-0 z-50 w-full">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-blue-600">
+        <i class="fas fa-graduation-cap mr-2"></i>EducateLanka
+      </a>
 
-    <main class="container mx-auto px-6 py-8">
-        
-                <section id="volunteer" class="page min-h-screen fade-in">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="text-left">
-                    <h1 class="text-4xl font-extrabold text-gray-800 !text-center leading-tight">Join Our Mission</h1>
-                      <p class="text-xl font-semibold text-gray-700 -mt-1 leading-tight">අපගේ මෙහෙවරට එක්වන්න</p> 
-                    <p class="text-lg text-gray-600 mt-4">Your time and skills can change lives. Whether you're a teacher, a professional, or a student, you can make a meaningful impact by volunteering with us.</p>
-                    <div class="mt-8 space-y-4">
-                        <div class="flex items-start">
-                            <i class="fas fa-chalkboard-teacher text-2xl text-blue-500 mt-1 mr-4"></i>
-                            <div>
-                                <h3 class="font-semibold text-xl text-gray-800">Teach a Class</h3>
-                                <p class="text-gray-600">Share your knowledge in English, IT, or other subjects.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-universal-access text-2xl text-green-500 mt-1 mr-4"></i>
-                            <div>
-                                <h3 class="font-semibold text-xl text-gray-800">Mentor a Student</h3>
-                                <p class="text-gray-600">Provide one-on-one guidance and support.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-cogs text-2xl text-yellow-500 mt-1 mr-4"></i>
-                            <div>
-                                <h3 class="font-semibold text-xl text-gray-800">Help with Operations</h3>
-                                <p class="text-gray-600">Assist with content creation, event planning, and more.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-2xl border">
-    <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Volunteer Registration</h2>
-    <form id="volunteer-form">
-        <div class="mb-4">
-            <label for="name" class="block text-gray-700 font-medium mb-1">Full Name</label>
-            <input type="text" id="name" name="name"
-                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                   required>
+      <!-- Desktop links -->
+      <div class="hidden lg:flex items-center space-x-6">
+        <a href="index.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+        <a href="about.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+        <a href="programs.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Programs</a>
+        <a href="resources.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Resources</a>
+        <a href="volunteer.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Volunteer</a>
+        <a href="blog.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Blog</a>
+        <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+      </div>
+
+      <!-- Desktop buttons (fix: hidden on mobile) -->
+      <div class="hidden lg:flex items-center space-x-4">
+        <a href="donate.html"
+           class="bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-blue-700 transition transform hover:scale-105 duration-300">
+          <i class="fas fa-heart mr-2"></i>Donate
+        </a>
+        <a href="portal.html"
+           class="bg-green-500 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-green-600 transition transform hover:scale-105 duration-300">
+          <i class="fas fa-user-graduate mr-2"></i>Student Portal
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="lg:hidden">
+        <button id="menu-btn" class="text-gray-700 focus:outline-none" aria-label="Open menu">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu drawer -->
+    <div id="mobile-menu" class="mobile-menu hidden fixed top-0 right-0 h-full w-64 bg-white shadow-xl z-50 p-6 lg:hidden">
+      <button id="close-btn" class="absolute top-4 right-4 text-gray-700 focus:outline-none" aria-label="Close menu">
+        <i class="fas fa-times text-2xl"></i>
+      </button>
+
+      <div class="flex flex-col space-y-6 mt-10">
+        <a href="index.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Home</a>
+        <a href="about.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">About Us</a>
+        <a href="programs.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Programs</a>
+        <a href="resources.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Resources</a>
+        <a href="volunteer.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Volunteer</a>
+        <a href="blog.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Blog</a>
+        <a href="contact.html" class="mobile-nav-link text-gray-700 hover:text-blue-600">Contact</a>
+        <a href="donate.html" class="bg-blue-600 text-white text-center font-semibold mt-4 px-5 py-2 rounded-lg">Donate</a>
+        <a href="portal.html" class="bg-green-500 text-white text-center font-semibold mt-2 px-5 py-2 rounded-lg">Student Portal</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container mx-auto px-6 py-8">
+    <section id="volunteer" class="page min-h-screen fade-in">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+        <!-- LEFT COLUMN -->
+        <div class="text-left">
+
+          <!-- FIX: bilingual heading centered together (scoped only here) -->
+          <div class="flex flex-col items-center text-center w-full">
+            <h1 class="text-4xl font-extrabold text-gray-800 leading-tight !m-0">
+              Join Our Mission
+            </h1>
+            <p class="text-xl font-semibold text-gray-700 leading-tight -mt-1 !m-0">
+              අපගේ මෙහෙවරට එක්වන්න
+            </p>
+          </div>
+
+          <p class="text-lg text-gray-600 mt-4">
+            Your time and skills can change lives. Whether you're a teacher, a professional, or a student,
+            you can make a meaningful impact by volunteering with us.
+          </p>
+
+          <div class="mt-8 space-y-4">
+            <div class="flex items-start">
+              <i class="fas fa-chalkboard-teacher text-2xl text-blue-500 mt-1 mr-4"></i>
+              <div>
+                <h3 class="font-semibold text-xl text-gray-800">Teach a Class</h3>
+                <p class="text-gray-600">Share your knowledge in English, IT, or other subjects.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <i class="fas fa-universal-access text-2xl text-green-500 mt-1 mr-4"></i>
+              <div>
+                <h3 class="font-semibold text-xl text-gray-800">Mentor a Student</h3>
+                <p class="text-gray-600">Provide one-on-one guidance and support.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <i class="fas fa-cogs text-2xl text-yellow-500 mt-1 mr-4"></i>
+              <div>
+                <h3 class="font-semibold text-xl text-gray-800">Help with Operations</h3>
+                <p class="text-gray-600">Assist with content creation, event planning, and more.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="mb-4">
-            <label for="email" class="block text-gray-700 font-medium mb-1">Email Address</label>
-            <input type="email" id="email" name="email"
-                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                   required>
-        </div>
-        <div class="mb-4">
-            <label for="area" class="block text-gray-700 font-medium mb-1">Area of Interest</label>
-            <select id="area" name="area"
-                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+        <!-- RIGHT COLUMN -->
+        <div class="bg-white p-8 rounded-2xl shadow-2xl border">
+          <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Volunteer Registration</h2>
+
+          <form id="volunteer-form">
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-medium mb-1">Full Name</label>
+              <input type="text" id="name" name="name"
+                     class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                     required />
+            </div>
+
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-medium mb-1">Email Address</label>
+              <input type="email" id="email" name="email"
+                     class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                     required />
+            </div>
+
+            <div class="mb-4">
+              <label for="area" class="block text-gray-700 font-medium mb-1">Area of Interest</label>
+              <select id="area" name="area"
+                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 <option>Teaching English</option>
                 <option>Teaching ICT</option>
                 <option>Mentorship</option>
                 <option>Content Creation</option>
                 <option>Event Support</option>
-            </select>
+              </select>
+            </div>
+
+            <button type="submit"
+                    class="w-full py-3 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition-colors">
+              Send Magic Link
+            </button>
+          </form>
+
+          <p id="message" class="mt-4 text-center text-green-600 font-medium"></p>
         </div>
-        <button type="submit"
-                class="w-full py-3 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600 transition-colors">
-            Send Magic Link
-        </button>
-    </form>
-    <p id="message" class="mt-4 text-center text-green-600 font-medium"></p>
-</div>
 
-            </div>
-        </section>
+      </div>
+    </section>
+  </main>
 
-    </main>
-
-    <footer class="bg-gray-800 text-white mt-16">
-        <div class="container mx-auto px-6 py-10">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4"><i class="fas fa-graduation-cap mr-2"></i>EducateLanka</h3>
-                    <p class="text-gray-400">Empowering Sri Lanka's future through free and accessible education.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
-                        <li><a href="programs.html" class="text-gray-400 hover:text-white">Programs</a></li>
-                        <li><a href="volunteer.html" class="text-gray-400 hover:text-white">Get Involved</a>  </li>
-                        <li><a href="blog.html" class="text-gray-400 hover:text-white">Blog</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><i class="fas fa-envelope mr-2"></i> info@educatelanka.org</li>
-                        <li><i class="fas fa-phone mr-2"></i> +94 11 234 5678</li>
-                        <li><i class="fas fa-map-marker-alt mr-2"></i> Colombo, Sri Lanka</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-lg mb-4">Follow Us</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
-                &copy; 2025 EducateLanka Foundation. All Rights Reserved.
-            </div>
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white mt-16">
+    <div class="container mx-auto px-6 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4"><i class="fas fa-graduation-cap mr-2"></i>EducateLanka</h3>
+          <p class="text-gray-400">Empowering Sri Lanka's future through free and accessible education.</p>
         </div>
-    </footer>
 
-    <script src="main.js"></script>
-    <script>
-const BACKEND_URL = "https://YOUR-RENDER-BACKEND.onrender.com"; //will be replaced by potential backend
+        <div>
+          <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+            <li><a href="programs.html" class="text-gray-400 hover:text-white">Programs</a></li>
+            <li><a href="volunteer.html" class="text-gray-400 hover:text-white">Get Involved</a></li>
+            <li><a href="blog.html" class="text-gray-400 hover:text-white">Blog</a></li>
+          </ul>
+        </div>
 
-document.getElementById("volunteer-form").addEventListener("submit", async (e) => {
-    e.preventDefault();
+        <div>
+          <h4 class="font-semibold text-lg mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><i class="fas fa-envelope mr-2"></i> info@educatelanka.org</li>
+            <li><i class="fas fa-phone mr-2"></i> +94 11 234 5678</li>
+            <li><i class="fas fa-map-marker-alt mr-2"></i> Colombo, Sri Lanka</li>
+          </ul>
+        </div>
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const area = document.getElementById("area").value;
+        <div>
+          <h4 class="font-semibold text-lg mb-4">Follow Us</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
 
-    if (!email) return alert("Please enter your email");
+      <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+        &copy; 2025 EducateLanka Foundation. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
 
-    try {
-        // Send magic link to email
+  <!-- Scripts -->
+  <script src="main.js"></script>
+
+  <script>
+    const BACKEND_URL = "https://YOUR-RENDER-BACKEND.onrender.com"; // replace with your Render backend
+
+    document.getElementById("volunteer-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const area = document.getElementById("area").value;
+
+      if (!email) return alert("Please enter your email");
+
+      try {
         const res = await fetch(`${BACKEND_URL}/auth/send-link`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email })
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email })
         });
-        const data = await res.json();
+
+        if (!res.ok) throw new Error("Request failed");
 
         document.getElementById("message").innerText =
-            "Magic link sent! Check your email to login.";
+          "Magic link sent! Check your email to login.";
 
-        // Optional: save additional info locally (name, area) until user verifies
         localStorage.setItem("volunteer_name", name);
         localStorage.setItem("volunteer_area", area);
 
-    } catch (err) {
+      } catch (err) {
         console.error(err);
         alert("Error sending magic link.");
-    }
-});
-</script>
- <link rel="stylesheet" href="s.css">
-<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-<script src="Chatbot.js"></script>
+      }
+    });
+  </script>
 
-    
-    <!--button and container-->
-    <button id = "chatbot-toggle"
-        style = "position:fixed; bottom:25px; right:25px; z-index:9999"
-        class = "bg-blue-600 text-white px-4 py-3 rounded-full shadow-lg hover:bg-blue-700 transition">
-        Need Help? Chat with ED-dy the bot!
-    </button>
+  <!-- Chatbot -->
+  <link rel="stylesheet" href="s.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <script src="Chatbot.js"></script>
 
+  <button id="chatbot-toggle"
+          style="position:fixed; bottom:25px; right:25px; z-index:9999"
+          class="bg-blue-600 text-white px-4 py-3 rounded-full shadow-lg hover:bg-blue-700 transition">
+    Need Help? Chat with ED-dy the bot!
+  </button>
 
 </body>
-
 </html>
-
 
 
 
