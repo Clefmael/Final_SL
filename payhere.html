@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educate Lanka Foundation | Payhere</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="main.css">
-</head>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educate Lanka | PayHere</title>
 
-  <!-- jQuery UI + chatbot styles (match donate.html) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  
+  <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="s.css">
 </head>
 
-<body class="overflow-x-hidden min-h-screen flex flex-col">
+<body class="overflow-x-hidden min-h-screen flex flex-col bg-gray-50">
   
-  <!-- HEADER-->
   <header class="bg-white/90 backdrop-blur-lg shadow-sm sticky top-0 z-50 w-full">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
       <a href="index.html" class="text-2xl font-bold text-blue-600">
@@ -25,13 +23,13 @@
       </a>
 
        <div class="lg:flex items-center space-x-6">
-                <a href="index.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
-                <a href="about.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
-                <a href="programs.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Programs</a>
-                <a href="resources.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Resources</a>
-                <a href="volunteer.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Volunteer</a>
-                <a href="blog.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Blog</a>
-                <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+            <a href="index.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+            <a href="about.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+            <a href="programs.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Programs</a>
+            <a href="resources.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Resources</a>
+            <a href="volunteer.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Volunteer</a>
+            <a href="blog.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Blog</a>
+            <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
       </div>
 
       <div class="lg:flex items-center space-x-4">
@@ -69,7 +67,7 @@
     </div>
   </header>
 
-  <main class="flex-grow flex items-center justify-center px-6 py-8">
+  <main class="flex-grow flex items-center justify-center px-6 py-8 min-h-[120vh]">
     <div class="bg-white rounded-2xl shadow-2xl border max-w-xl w-full p-10 text-center">
 
       <h1 class="text-4xl font-extrabold text-gray-800 leading-tight">
@@ -98,7 +96,8 @@
       </p>
     </div>
   </main>
-<footer class="bg-gray-800 text-white mt-16">
+
+  <footer class="bg-gray-800 text-white mt-16">
         <div class="container mx-auto px-6 py-10">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
@@ -136,15 +135,16 @@
                 &copy; 2025 EducateLanka Foundation. All Rights Reserved.
             </div>
         </div>
-    </footer>
+  </footer>
 
-  <script src="main.js"></script>
-
-  <!-- jQuery + jQuery UI (Required for chatbot, match donate.html) -->
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  
   <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
 
-  <!-- Chatbot button + dialog container -->
+  <script src="main.js"></script>
+  
+  <script src="Chatbot.js"></script>
+
   <button id="chatbot-toggle"
           style="position:fixed; bottom:25px; right:25px; z-index:9999;"
           class="bg-blue-600 text-white px-4 py-3 rounded-full shadow-lg hover:bg-blue-700 transition">
@@ -159,11 +159,6 @@
       <button id="chatbot-send" class="bg-blue-600 text-white px-3 py-2 rounded">Send</button>
     </div>
   </div>
-
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-  <!-- Chatbot script -->
-  <script src="Chatbot.js"></script>
 
 </body>
 </html>
